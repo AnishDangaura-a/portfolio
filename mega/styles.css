@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Common Container */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.flex-row {
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Utility Bar Styles */
+.utility-bar {
+    background-color: #F3F9FB;
+    height: 38px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 12px;
+    color: #666666;
+}
+
+.utility-links {
+    margin-left: auto; /* Pushes links to the right */
+    display: flex;
+    gap: 25px;
+}
+
+/* Main Header Styles */
+.main-header {
+    height: 80px;
+}
+
+.logo {
+    color: #008ECC;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.search-container input {
+    width: 500px;
+    height: 40px;
+    background-color: #F3F9FB;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.user-actions {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Category Nav Styles */
+.category-nav {
+    padding: 15px 0;
+}
+
+.category-list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.category-list li {
+    padding: 8px 15px;
+    background-color: #F3F9FB;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.category-list li.active {
+    background-color: #008ECC;
+    color: white;
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+    width: 1200px;
+    height: 350px;
+    background-color: #313752; /* Dark blue/gray background */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    color: white;
+}
+
+.hero-text p { font-size: 18px; margin-bottom: 10px; }
+.hero-text h1 { font-size: 55px; line-height: 1; }
+.hero-text h2 { font-size: 30px; font-weight: 300; }
+
+.watch-placeholder {
+    width: 300px;
+    height: 300px;
+    background: #444; /* Placeholder for watch image */
+    border-radius: 50%;
+    margin-left: 100px;
+}

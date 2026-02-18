@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+}
+.sidebar{
+    width: 20%;
+    background-color: #0f172a;
+    border-right: 1px solid white;
+    height: 100vh;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    color: white;
+}
+.content{
+    width: 80%;
+    background-color: #020617;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.box{
+    height: 350px;
+    width: 350px;
+    border: 2px solid white;
+}
+
+.imgbar{
+     width:35px;
+    height:35px;
+    border-radius:50%;
+}

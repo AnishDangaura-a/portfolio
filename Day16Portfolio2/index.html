@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .parent{
+            border: 2px solid;
+            display: grid;
+
+            /* grid-template-columns:200px 200px 200px 200px;  */
+
+            grid-template-columns: auto auto auto auto;
+
+            row-gap: 2rem;
+              }
+
+        .child{
+            height: 50px;
+            width: 50px;
+            border: 2px solid red;
+            font-family: 2rem;
+            align-content: center;
+            text-align: center;
+        }
+
+        .course{
+            border: 1px solid green;
+            border-radius: 1.5rem;
+            padding: 1rem
+        }
+
+        .course img{
+            width: 100px;
+        }
+
+        button{
+            border: none;
+            background-color: green;
+            padding: 1rem 1.5rem;
+            border-radius: 2rem;
+            color: white;
+        }
+
+        h1{
+            color: green;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+
+        <div class="course">
+            <img src="#" alt="">
+
+            <h2>Data science in Nepal</h2>
+
+            <span>2.5 month</span>
+
+            <span>Learn More</span>
+        </div>
+
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+    </div>
+</body>
+</html>

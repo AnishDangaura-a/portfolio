@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackgroundImage</title>
+    <style>
+
+        .container{
+            display: flex;
+            gap: 1rem;
+        }
+        .reel{
+            border: 2px solid;
+            height: 500px;
+            width: 300px;
+            color: rgb(241, 233, 233);
+            position: relative;
+            background-image: url("eye.png");
+            background-position: center;          
+            align-content: end;
+            text-align: center; 
+            border-radius: 1rem;
+            
+        }
+       
+         .reel:hover{
+            cursor: pointer;
+              filter: grayscale();
+            
+         }
+
+
+
+         .avatar img{
+            border-radius: 50%;
+            height: 40px;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+         }
+
+         .reel2{
+            border: 2px solid;
+            height: 500px;
+            width: 300px;
+            color: rgb(241, 233, 233);
+            position: relative;
+            background-image: url("eye.png");
+            background-position: center;          
+            align-content: end;
+            text-align: center; 
+            border-radius: 1rem;
+            
+        }
+
+         .reel2:hover{
+            cursor: pointer;
+              filter:grayscale();
+            
+         }
+
+
+    </style>
+</head>
+<body> 
+    
+    <div class="container">
+        <div class="reel">
+        <div class="avatar">
+            <img src="eye.png" alt="avatar" width="40">
+        </div>
+
+        <span>Eyes</span>
+
+    </div>
+
+    <div class="reel2">
+        <div class="avatar">
+            <img src="eye.png" alt="avatar" width="40">
+        </div>
+
+        <span>Eyes</span>
+
+    </div>
+    </div>
+
+
+</body>
+</html>

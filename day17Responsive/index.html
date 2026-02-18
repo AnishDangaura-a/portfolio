@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vh;
+            background-color: green;
+        }
+
+        @media screen and (max-width:768px) {
+            .container{
+                background: blue;
+            }
+                 
+        }
+
+         /* @media screen and (max-width:768px) {
+            .container{
+                background: blue;
+            }
+                 
+        } */
+
+        /* @media(orientation:landscape){
+            .container{
+                background-color: aqua;
+            }
+        } */
+
+        @media(orientation:portrait){
+            .container{
+                background-color: aqua;
+            }
+        }
+
+
+
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>

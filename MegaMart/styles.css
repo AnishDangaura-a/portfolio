@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navTop {
+    background-color: #F3F9FB; /* Light background */
+    width: 100%;               /* Full screen width */
+    height: 40px;              /* Fixed height for the bar */
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.navContainer {
+    width: 1200px;             /* Standard layout width */
+    margin: 0 auto;            /* Centers the bar on the screen */
+    display: flex;
+    justify-content: space-between; /* Pushes text left and links right */
+    align-items: center;       /* Vertically centers text */
+    height: 100%;              /* Matches parent height */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.welcome-text {
+    color: #666666;
+    font-size: 12px;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+.link-item {
+    color: #666666;
+    font-size: 12px;
+    margin-left: 25px;         /* Specific spacing between links */
+}
+
+.link-item strong {
+    color: #333333;            /* Darker color for the zip code */
+}

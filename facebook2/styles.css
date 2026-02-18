@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f0f2f5;
+}
+
+.navbar{
+    width:100%px;
+    height:60px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    font-size:30px;
+    color:#1877f2;
+    font-weight:bold;
+}
+
+.search-box{
+    background:#f0f2f5;
+    padding:8px 12px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+}
+
+.search-box input{
+    border:none;
+    background:#f0f2f5;
+    width:200px;
+}
+
+.nav-center{
+    display:flex;
+    gap:40px;
+    gap: 100px;
+}
+
+.nav-icon{
+    font-size:22px;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+}
+
+.profile img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+.icon-circle{
+    width:40px;
+    height:40px;
+    background:#e4e6eb;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.container{
+    display: flex;
+}
+
+.leftbar{
+    width: 25%;
+    background:#f0f2f5;
+    border-right: 1px solid white;
+    height: 100vh;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    color: black;
+    cursor: pointer;
+}
+
+.contentbar{
+    display: flex;
+    width: 50%;
+    background:#f0f2f5;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 0.7rem;
+    align-content: left;
+    border: 2px solid black;
+    
+
+}
+
+.anish img,.contentbar img{
+    width: 130px;
+    height: 170px;
+    overflow: auto;
+    /* margin-right: -30px; */
+}
+
+.rightbar{
+    width: 25%;
+    background:#f0f2f5;
+    border-left: 1px solid white;
+    height: 100vh;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    color: black;
+    cursor: pointer;
+}
+
+.pizza img,.rightbar img{
+    height: 130px;
+}

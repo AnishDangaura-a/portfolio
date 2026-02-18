@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(224,224,224);
+}
+
+.calculator{
+    background: rgb(224,224,224);
+    box-shadow: 20px 20px 60px rgb(255, 255, 255),
+    -20px -20px 60px white;
+    border-radius: 30px;
+    padding: 30px;
+    width: 400px;
+}
+
+.display{
+    background: rgb(224,224,224);
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 8px rgb(174, 166, 166),
+    inset -6px -6px 8px white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 40px 30px;
+    color: rgb(51,51,51);
+
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+button{
+    background: rgb(224,224,224);
+    border: none;
+    box-shadow: 8px 8px 10px rgb(174, 166, 166),
+    -8px -8px 10px white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.c{
+    color: red;
+}
+
+.del{
+    color: red;
+}
+
+.operator{
+    color: red;
+}
+
+.dot{
+    color: red;
+}
+
+.zero{
+    background: rgb(187,181,181);
+}
+
+p{
+    text-align: center;
+    color: red;
+}
+

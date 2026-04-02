@@ -1,109 +1,316 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="icon" href="profile.webp">
-    <link rel="stylesheet" href="styles.css" />
-    <!-- fontawesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anish Dangaura — UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
 
-    <div id="preloader"></div>
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Anish<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </nav>
 
-    <header>
-      <nav>
-        <h1 style="font-size: 70px">Anish</h1>
-        <ul>
-          <li>
-            <a href=""> <i class="fa-regular fa-house"></i> Home</a>
-          </li>
-          <li><a href="">about</a></li>
-          <li><a href="">blog</a></li>
-          <li><a href="">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <hr />
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <p class="hero-tag">Available for freelance work</p>
+    <h1 class="hero-title">
+      <span class="line">Anish</span>
+      <span class="line"><span class="accent-word">Dangaura</span></span>
+      <span class="line"><span class="outline-word">Designer</span></span>
+    </h1>
+    <p class="hero-sub">
+      UI/UX &amp; Graphic Designer crafting bold, human-centered digital experiences — for websites, apps, and brands that want to stand out.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-ghost">Let's Talk</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+    <div class="hero-numbers">
+      <div class="stat">
+        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-label">Years Exp.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">20<span>+</span></div>
+        <div class="stat-label">Projects Done</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">15<span>+</span></div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+    </div>
+  </section>
 
-    <section class="hero">
-      <div>
-        <br /><br /><br /><br /><br />
-        <h1 id="description" style="font-size: 100px; margin-left: 250px">
-          Hi, <br />I'am <span>Anish Dangaura</span> <br />
-          a UI/UX Designer
-        </h1>
-        <br><br><br><br>
-        <button>Contact</button>
-        <div class="social">
-          <ul>
-            <li><i class="fa-brands fa-square-linkedin"></i> Linkdin</li>
-            <li><i class="fa-brands fa-behance"></i> Be</li>
-            <li><i class="fa-brands fa-github"></i> Github</li>
-          </ul>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-img-wrap">
+      <div class="about-img-box"></div>
+      <div class="about-tag-chip">UI/UX Designer</div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Design is how it <em style="font-style:italic;color:var(--accent2)">works</em>, not just how it looks.</h2>
+      <p>Hey! I'm Anish — a UI/UX and graphic designer based in Nepal. I turn complex problems into intuitive, beautiful interfaces that users love.</p>
+      <p>My process blends empathy-driven research with bold visual design — creating experiences that are both deeply functional and visually memorable.</p>
+      <p>Whether it's a web app, mobile product, or full brand identity — I bring clarity, craft, and intention to every pixel.</p>
+      <div class="about-pills">
+        <span class="pill">Figma</span>
+        <span class="pill">Adobe XD</span>
+        <span class="pill">Photoshop</span>
+        <span class="pill">Illustrator</span>
+        <span class="pill">After Effects</span>
+        <span class="pill">Prototyping</span>
+        <span class="pill">User Research</span>
+        <span class="pill">Design Systems</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label">What I Do</p>
+    <h2 class="section-title">My Skillset</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <h3>UI Design</h3>
+        <p>Crafting visually stunning interfaces with a meticulous eye for typography, color, spacing, and detail.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Design Systems</span>
+          <span class="skill-tag">Components</span>
+          <span class="skill-tag">Prototyping</span>
         </div>
       </div>
-      <img
-        src="profile.webp"
-        alt="hero_image"
-      />
-    </section>
-
-    <div class="about">
-      <h1 style="text-decoration: underline;">About</h1>
+      <div class="skill-card">
+        <div class="skill-icon">🔍</div>
+        <h3>UX Research</h3>
+        <p>Understanding user needs through research, personas, journey mapping, and usability testing to build empathy-first products.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">User Interviews</span>
+          <span class="skill-tag">Wireframing</span>
+          <span class="skill-tag">Journey Maps</span>
+          <span class="skill-tag">A/B Testing</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📱</div>
+        <h3>App Design</h3>
+        <p>Designing sleek, intuitive mobile and web app experiences with consistent flows and accessible patterns.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">iOS</span>
+          <span class="skill-tag">Android</span>
+          <span class="skill-tag">Responsive</span>
+          <span class="skill-tag">Web Apps</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">✏️</div>
+        <h3>Graphic Design</h3>
+        <p>Creating compelling visual identities, marketing materials, and brand assets that communicate with impact.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Branding</span>
+          <span class="skill-tag">Illustrator</span>
+          <span class="skill-tag">Print</span>
+          <span class="skill-tag">Social Media</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔢</div>
+        <h3>Design Systems</h3>
+        <p>Building scalable component libraries and design tokens that keep products consistent at every scale.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Tokens</span>
+          <span class="skill-tag">Documentation</span>
+          <span class="skill-tag">Storybook</span>
+          <span class="skill-tag">Variables</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎬</div>
+        <h3>Motion &amp; Animation</h3>
+        <p>Bringing interfaces to life with purposeful micro-interactions, transitions, and animated prototypes.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">After Effects</span>
+          <span class="skill-tag">Lottie</span>
+          <span class="skill-tag">Micro-interactions</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <section class="about1">
-      <div class="imageabout">
-        <img
-          src="profile.webp"
-          alt="About_image"
-        />
-      </div>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-header">
       <div>
-        <h1 style="margin-left: 400px; font-size: 70px">I' am Anish</h1>
-        <p>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto impedit temporibus eligendi quam! Similique libero deleniti sapiente! Dignissimos, autem adipisci nesciunt, neque iure harum illo consequatur ex placeat quasi reprehenderit.+
-        </p>
+        <p class="section-label">Selected Work</p>
+        <h2 class="section-title">Projects</h2>
       </div>
-    </section>
-
-    <div class="about">
-      <h1 style="text-decoration: underline;">Skills</h1>
     </div>
-    <section class="about1">
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"><div class="project-num">01</div></div>
+          <span class="project-badge badge-ux">UX / Product</span>
+        </div>
+        <div class="project-info">
+          <h3>FinTrack — Personal Finance App</h3>
+          <p>A comprehensive personal finance app redesign focused on making budgeting feel effortless. Reduced user drop-off by 42% through simplified onboarding and smart data visualization dashboards.</p>
+          <div class="project-meta">
+            <div class="project-tools">
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">User Research</span>
+              <span class="tool-tag">Prototyping</span>
+              <span class="tool-tag">iOS</span>
+            </div>
+            <a href="#" class="project-link">View Case Study →</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"><div class="project-num">02</div></div>
+          <span class="project-badge badge-ui">UI Design</span>
+        </div>
+        <div class="project-info">
+          <h3>Luminary — SaaS Dashboard</h3>
+          <p>Clean, data-dense dashboard UI for a B2B analytics platform with a dark-mode-first design system.</p>
+          <div class="project-meta">
+            <div class="project-tools">
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">Design System</span>
+            </div>
+            <a href="#" class="project-link">View →</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"><div class="project-num">03</div></div>
+          <span class="project-badge badge-branding">Branding</span>
+        </div>
+        <div class="project-info">
+          <h3>Kora — Brand Identity</h3>
+          <p>Full brand identity for a Nepali sustainable fashion startup — logo, typography, packaging, and digital assets.</p>
+          <div class="project-meta">
+            <div class="project-tools">
+              <span class="tool-tag">Illustrator</span>
+              <span class="tool-tag">Photoshop</span>
+            </div>
+            <a href="#" class="project-link">View →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="exp-layout">
       <div>
-        <h1 style="margin-left: 400px; font-size: 70px">Professional Skills</h1>
-        <p class="proSkills">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, odit? Consectetur, culpa enim quia reprehenderit velit hic obcaecati adipisci amet quam aut magnam? Reprehenderit sapiente nam dolorum harum, quis dicta.
-        </p>
+        <p class="section-label">My Journey</p>
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2023 — Present</div>
+            <div class="timeline-role">UI/UX Designer</div>
+            <div class="timeline-company">Freelance · Remote</div>
+            <p class="timeline-desc">Designing end-to-end digital experiences for startups and small businesses globally. Specializing in web apps, mobile products, and brand systems.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2022 — 2023</div>
+            <div class="timeline-role">Junior Product Designer</div>
+            <div class="timeline-company">TechNepal · Kathmandu</div>
+            <p class="timeline-desc">Contributed to the redesign of a fintech mobile app serving 50K+ users. Led user research sprints and developed a reusable component library in Figma.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2021 — 2022</div>
+            <div class="timeline-role">Graphic Designer</div>
+            <div class="timeline-company">CreativeHub · Nepalgunj</div>
+            <p class="timeline-desc">Crafted brand identities, social media visuals, and print materials for local businesses and NGOs across Lumbini Province.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="imageabout">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPtTzw_YA3VX0nCpjfq_-Tc7ibjSmar-ia1g&s"
-          alt="About_image"
-        />
+      <div class="exp-right">
+        <p class="section-label">Tools &amp; Education</p>
+        <div style="margin-top: 3rem;">
+          <div class="exp-award">
+            <h4>🎓 Bachelor's in IT / Design</h4>
+            <p>Tribhuvan University, Nepal · 2018–2022</p>
+          </div>
+          <div class="exp-award">
+            <h4>🏆 Google UX Design Certificate</h4>
+            <p>Coursera · 2022 · Professional certification</p>
+          </div>
+          <div class="exp-award">
+            <h4>🌟 Figma Community Contributor</h4>
+            <p>Published 3 free UI kits used by 2,000+ designers</p>
+          </div>
+        </div>
+        <p class="tools-label">Daily Tools</p>
+        <div class="about-pills">
+          <span class="pill">Figma</span>
+          <span class="pill">Adobe XD</span>
+          <span class="pill">Photoshop</span>
+          <span class="pill">Illustrator</span>
+          <span class="pill">After Effects</span>
+          <span class="pill">Notion</span>
+          <span class="pill">Maze</span>
+          <span class="pill">Lottie</span>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>@All rights reserved by Anish Dangaura.</footer>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="section-label">Get In Touch</p>
+      <h2 class="contact-big">Let's build something <em>extraordinary</em> together.</h2>
+      <p class="contact-sub">Have a project in mind? I'm open to freelance work, collaborations, and full-time opportunities.</p>
+      <a href="mailto:anish.dangaura@gmail.com" class="contact-email">anish.dangaura@gmail.com</a>
+      <div class="social-row">
+        <a href="#" class="social-link">Behance</a>
+        <a href="#" class="social-link">Dribbble</a>
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">Instagram</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer>
+    <a href="#hero" class="footer-logo">Anish<span>.</span></a>
+    <p>&copy; 2025 Anish Dangaura. All rights reserved.</p>
+    <p>Designed &amp; Built with passion 🖤</p>
+  </footer>
 
-    <script>
-      var loader = document.getElementById("preloader");
-      window.addEventListener("load", function (){
-        loader.style.display = "none";
-      })
-    </script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
